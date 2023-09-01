@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4266294849235879130}
   - component: {fileID: 2334772894112326472}
   - component: {fileID: 2597011605298597444}
+  - component: {fileID: -7656003814663432419}
   - component: {fileID: 3868556778383795962}
   m_Layer: 0
   m_Name: Player
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002, y: -3.18, z: 0}
-  m_LocalScale: {x: 0.6818, y: 0.5404, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -128,6 +129,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxXPosition: 2
   minXPosition: -2
+--- !u!114 &-7656003814663432419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8368490330460171096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b591c8f2a660b4479aa471b03f8386e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!68 &3868556778383795962
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -157,7 +170,7 @@ EdgeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
