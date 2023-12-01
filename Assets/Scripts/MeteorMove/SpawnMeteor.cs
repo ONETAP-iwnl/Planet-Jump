@@ -12,7 +12,7 @@ public class SpawnMeteor : MonoBehaviour
 
     private void Start()
     {
-        time = 1;
+        time = Random.Range(1,3);
     }
 
     private void Update()

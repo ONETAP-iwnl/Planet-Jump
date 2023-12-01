@@ -5,17 +5,12 @@ using UnityEngine;
 
 public class TakeSpeedBonus : MonoBehaviour
 {
+    public static Action OnSpeedBonus;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("SpeedBonus"));
+        if (collision.CompareTag("SpeedBonus"))
         {
-            BonusSpeed();
+            OnSpeedBonus?.Invoke();
         }
-    }
-    public float _moveSpeedBonus;
-
-    private void BonusSpeed()
-    {
-        transform.position += Vector3.down * _moveSpeedBonus * Time.deltaTime;
     }
 }
